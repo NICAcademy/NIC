@@ -1,43 +1,156 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>NIC Academy | Study Hall & Tutorials</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NIC Academy – Study Hall with Library, Tutorials (1st–10th), Inter Maths Mock Exams, Shilpanagar, Nagaram, Hyderabad">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f6f8;
-            color: #333;
-        }
-        header {
-            background: #0b4aa2;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        section {
-            padding: 30px 15px;
-            max-width: 1000px;
-            margin: auto;
-        }
-        h2 {
-            color: #0b4aa2;
-            margin-bottom: 10px;
-        }
-        .card {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        ul {
-            padding-left: 20px;
-        }
-        .social-links a {
+<meta charset="UTF-8">
+
+<!-- SEO META TAGS -->
+<title>NIC Academy | Study Hall | Tutorials | Mock Exams | Nagaram |Reading Rooms|</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="NIC Academy Nagaram – Study Hall with Library, Maths Booster, Tutorials (1st–10th), Mock Exams SSC & Intermediate.">
+<meta name="keywords" content="NIC Academy, Study Hall Nagaram, Maths Tuition, Mock Exams Hyderabad, Library Study Hall,Reading Rooms,Summer camps,B.Tech Tutorials,Study Nagaram,IIT,NEET,JEE,Software Trainings,">
+<meta name="author" content="NIC Academy">
+
+<style>
+.top-header{
+  background:#e9f6ef;
+  padding:20px 15px;
+}
+
+.header-container{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+.logo-box{
+  flex:1;
+  text-align:center;
+}
+
+.logo-box img{
+  max-width:250px;
+}
+
+.logo-box h1{
+  margin:10px 0 5px;
+  color:#2e8b57;
+}
+
+.banner-box{
+  flex:2;
+}
+
+.banner-box img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:12px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width:768px){
+  .header-container{
+    flex-direction:column;
+  }
+  .banner-box img{
+    height:180px;
+  }
+}
+
+:root{
+  --green:#2e8b57;
+  --lightgreen:#e9f6ef;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Segoe UI, Arial, sans-serif;
+  background:#fff;
+  color:#333;
+}
+header{
+  background:var(--lightgreen);
+  text-align:center;
+  padding:30px 15px;
+}
+header img{max-width:120px}
+header h1{margin:10px 0;color:var(--green)}
+.banner img{width:100%;max-height:420px;object-fit:cover}
+section{max-width:1100px;margin:auto;padding:40px 15px}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+.card{
+  background:var(--lightgreen);
+  padding:22px;
+  border-radius:12px;
+}
+.card h2{color:var(--green);margin-top:0}
+ul{padding-left:18px}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:15px;
+}
+.gallery img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+.contact{
+  background:var(--green);
+  color:#fff;
+  padding:30px;
+  border-radius:14px;
+}
+.contact h2{color:#fff}
+
+iframe{width:100%;border:0;border-radius:10px}
+
+form input, form select{
+  width:100%;
+  padding:12px;
+  margin:8px 0;
+  border-radius:6px;
+  border:1px solid #ccc;
+}
+form button{
+  background:#25D366;
+  color:#fff;
+  padding:12px;
+  border:none;
+  border-radius:6px;
+  font-size:16px;
+  cursor:pointer;
+}
+
+/* FLOATING WHATSAPP */
+.whatsapp-float{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:#fff;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:30px;
+  text-decoration:none;
+  box-shadow:0 6px 15px rgba(0,0,0,.3);
+}
+
+  .social-links a {
             display: inline-block;
             margin: 10px 10px 0 0;
             text-decoration: none;
@@ -49,83 +162,150 @@
         .instagram { background: #e1306c; }
         .whatsapp { background: #25D366; }
         .facebook { background: #1877F2; }
-
-        footer {
-            background: #222;
-            color: #ccc;
-            text-align: center;
-            padding: 15px;
-            font-size: 14px;
-        }
-    </style>
+		
+footer{
+  background:#f3f3f3;
+  text-align:center;
+  padding:15px;
+  font-size:14px;
+}
+</style>
 </head>
 
 <body>
 
-<header>
-    <h1>NIC ACADEMY</h1>
-    <p>Study Hall with Library | Tutorials | Inter Maths Mock Exams</p>
+<header class="top-header">
+  <div class="header-container">
+    
+    <!-- LOGO SECTION -->
+    <div class="logo-box">
+      <img src="C:\Users\kr502535\Desktop\Images\Images\Logo with out ph.jpg" alt="NIC Academy Logo" align=left>
+      <h1>NIC ACADEMY</h1>
+      <p><i>Your Success, Our Mission</i></p>
+	  <h1>STUDY HALL | TUTORIALS | LIBRARY | MOCK EXAMS</h1>
+    </div>
+
+  </div>
 </header>
 
+<section class="grid">
+  <div class="card">
+    <h2>📚 Study Hall with Library</h2>
+    <ul>
+      <li>6:00 AM – 10:00 PM</li>
+      <li>Separate Boys & Girls</li>
+      <li>Wi-Fi | CCTV | Power Backup</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🏫 Tutorials (1st – 10th)</h2>
+    <ul>
+      <li>4:00 PM – 9:00 PM</li>
+      <li>Maths Booster Support</li>
+      <li>Concept Clarity</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>📝 Mock Exams</h2>
+    <ul>
+      <li>SSC / CBSE / Intermediate</li>
+      <li>FREE for Top 100 Students</li>
+    </ul>
+  </div>
+</section>
 <section>
+<h2 style="color:#2e8b57;text-align:center;"><i>Your Space</i></h2>
+<div class="gallery">
+  <img src="C:\Users\kr502535\Desktop\Images\Images\Frontshop.jpeg">
+  <img src="C:\Users\kr502535\Desktop\Images\Images\Library.jpeg">
+  <img src="C:\Users\kr502535\Desktop\Images\Images\GSH.jpeg">
+  <img src="C:\Users\kr502535\Desktop\Images\Images\BSH.jpeg">
+  <img src="C:\Users\kr502535\Desktop\Images\Images\PT.jpeg">
+  <img src="C:\Users\kr502535\Desktop\Images\Images\C1.jpeg">
+</div>
+</section>
 
-    <div class="card">
-        <h2>📚 Study Hall with Library</h2>
-        <ul>
-            <li>⏰ Timings: <strong>6:00 AM – 10:00 PM</strong></li>
-            <li>✔ Separate Seating for Boys & Girls</li>
-            <li>✔ Wi-Fi | CCTV | Power Backup</li>
-            <li>✔ Peaceful & Exam-Focused Environment</li>
-        </ul>
-    </div>
+<!-- REGISTRATION FORM -->
+<section>
+  <h2 style="color:#2e8b57;">📝 Student Registration</h2>
 
-    <div class="card">
-        <h2>🏫 Tutorial Classes (1st – 10th)</h2>
-        <ul>
-            <li>⏰ Timings: <strong>4:00 PM – 9:00 PM</strong></li>
-            <li>📘 Maths Special Booster Support</li>
-            <li>📖 Concept-based Teaching</li>
-            <li>📝 Regular Tests & Performance Tracking</li>
-        </ul>
-    </div>
+  <form onsubmit="sendToWhatsApp(); return false;">
+    <input type="text" id="name" placeholder="Student Name" required>
+    <input type="tel" id="mobile" placeholder="Mobile Number" required>
 
-    <div class="card">
-        <h2>📝 Inter Mathematics MOCK Exams</h2>
-        <ul>
-            <li>📘 Maths IA | IB | IIA | IIB</li>
-            <li>🎯 Target: <strong>75 / 75 Marks</strong></li>
-            <li>🏆 FREE for Top 100 Students</li>
-            <li>🪪 Exam Seat Number Before Mock Exam</li>
-        </ul>
-    </div>
+    <select id="class" required>
+      <option value="">Select Class</option>
+      <option>1st – 5th</option>
+      <option>6th – 8th</option>
+      <option>9th – 10th</option>
+      <option>Intermediate</option>
+    </select>
 
-    <div class="card">
-        <h2>📍 Contact & Location</h2>
-        <p>
-            <strong>Address:</strong><br>
-            NIC Academy, Shilpanagar, Nagaram,<br>
-            Hyderabad – 500083<br>
-            Near St. Martin School
-        </p>
-        <p>
-            📞 <strong>Contact:</strong> 8901989999
-        </p>
-    </div>
+    <button type="submit">Register via WhatsApp</button>
+  </form>
+</section>
+<script>
+function sendToWhatsApp() {
+  var name = document.getElementById("name").value;
+  var mobile = document.getElementById("mobile").value;
+  var studentClass = document.getElementById("class").value;
 
-    <div class="card">
+  var message = 
+    "Hello NIC Academy,%0A%0A" +
+    "Student Registration Details:%0A" +
+    "Name: " + name + "%0A" +
+    "Mobile: " + mobile + "%0A" +
+    "Class: " + studentClass + "%0A%0A" +
+    "Please contact me.";
+
+  var phone = "918901989999"; // Your WhatsApp number
+  var url = "https://wa.me/" + phone + "?text=" + message;
+
+  window.open(url, "_blank");
+}
+
+function sendToWhatsApp_Cust() {
+  var name = document.getElementById("name").value;
+  var mobile = document.getElementById("mobile").value;
+  var studentClass = document.getElementById("class").value;
+
+  var message = 
+    "Hello NIC Academy,%0A%0A" 
+    "Please contact me.";
+
+  var phone = "918901989999"; // Your WhatsApp number
+  var url = "https://wa.me/" + phone + "?text=" + message;
+
+  window.open(url, "_blank");
+}
+</script>
+
+
+<!-- GOOGLE MAP -->
+<section>
+<h2 style="color:#2e8b57;">📍 Locate Us</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.2082779946395!2d78.6038631!3d17.4835669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9d5f2fec14d5%3A0xb82b540dc659e1e6!2sNIC%20ACADEMY!5e1!3m2!1sen!2sin!4v1768374541299!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<!-- CONTACT -->
+<section>
+<div class="contact">
         <h2>🔗 Follow & Contact Us</h2>
         <div class="social-links">
             <!-- Replace # with your actual links -->
-            <a href="#" class="instagram" target="_blank">Instagram</a>
+            <a href="https://www.instagram.com/nic.academy?utm_source=qr&igsh=MXVhdHliMm80dDFhaA==" class="instagram" target="_blank">Instagram</a>
             <a href="https://wa.me/918901989999" class="whatsapp" target="_blank">WhatsApp</a>
-            <a href="#" class="facebook" target="_blank">Facebook</a>
+            <a href="https://www.facebook.com/share/1HZp6kwJcy/" class="facebook" target="_blank">Facebook</a>
         </div>
     </div>
-
 </section>
 
+
+
 <footer>
-    © 2026 NIC Academy | Learn with Focus. Achieve with Confidence.
+© 2026 NIC Academy | Learn with Focus. Achieve with Confidence.
 </footer>
 
 </body>
