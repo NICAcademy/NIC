@@ -276,6 +276,22 @@ footer{
 function sendToWhatsApp(){
   let n = document.getElementById("name").value.trim();
   let m = document.getElementById("mobile").value.trim();
+  let c = document.getElementById("class").value.trim();
+
+  let message = `Hello NIC Academy,
+
+Name: ${n}
+Mobile: ${m}
+Course: ${c}`;
+
+  let url = "https://wa.me/918901989999?text=" + encodeURIComponent(message);
+
+  window.open(url, "_blank");
+}
+	
+function sendToWhatsApp_1(){
+  let n = document.getElementById("name").value.trim();
+  let m = document.getElementById("mobile").value.trim();
   let c=document.getElementById("class").value.trim();
   let msg=`Hello NIC Academy,%0AName: ${n}%0AMobile: ${m}%0AClass: ${c}`;
   window.open(`https://wa.me/918901989999?text=${msg}`,"_blank");
@@ -299,6 +315,7 @@ function sendToWhatsApp_Cust() {
 
 </body>
 </html>
+
 
 
 
