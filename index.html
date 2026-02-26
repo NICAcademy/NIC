@@ -274,9 +274,9 @@ footer{
 
 <script>
 function sendToWhatsApp(){
-  let n=name.value;
-  let m=mobile.value;
-  let c=document.getElementById("class").value;
+  let n = document.getElementById("name").value.trim();
+  let m = document.getElementById("mobile").value.trim();
+  let c=document.getElementById("class").value.trim();
   let msg=`Hello NIC Academy,%0AName: ${n}%0AMobile: ${m}%0AClass: ${c}`;
   window.open(`https://wa.me/918901989999?text=${msg}`,"_blank");
 }
@@ -299,6 +299,7 @@ function sendToWhatsApp_Cust() {
 
 </body>
 </html>
+
 
 
 
